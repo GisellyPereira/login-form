@@ -227,7 +227,7 @@ svg path{
 }
 
 
-@media (max-width: 450px){
+@media (max-width: 500px){
   .logo{
     padding: 20px 0px 0px 20px;
   }
@@ -235,6 +235,7 @@ svg path{
    display: none;
   }
   .container-form{
+    margin-top: 200px;
     padding: 0px 50px 150px 50px;
     background: transparent;
   }
