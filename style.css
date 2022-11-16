@@ -229,13 +229,13 @@ svg path{
 
 @media (max-width: 500px){
   .logo{
-    padding: 20px 0px 0px 20px;
+    display: none;
   }
   .background-img img{
    display: none;
   }
   .container-form{
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 0px 50px 150px 50px;
     background: transparent;
   }
