@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+  overflow: hidden;
+  background: #191816;
+  color: #afb6c2;
+  font-family: 'Poppins', sans-serif;
+}
+.all{
+  display: flex;
+}
+.logo{
+  display: block;
+  position: absolute;
+  padding: 40px;
+}
+/* CAIXAS PRINCIPAIS */
+.part-form{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container-form{
+  display:inline-block;
+  background: #24221f;
+  padding: 50px 100px 50px 100px;
+  
+}
+
+/* TITULO/H2 E P */
+.icon-text{
+  display: flex;
+  color: #d4ccb6;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+.icon-text h2{
+  font-size: 28px;
+  margin-left:15px ;
+  font-weight: 700;
+}
+.parag-header{
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* INPUTS E LABELS */
+.caixa-email label{
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+.emoji-email{
+  position: absolute;
+  padding: 12px 0px 0px 10px;
+}
+.caixa-email .input-email{
+  background: transparent;
+  border: 1px solid #afb6c2;
+  border-radius: 5px;
+  width: 23rem;
+  height: 40px;
+  padding-left: 40px;
+  color: #afb6c2;
+}
+.inputs.email-ativo .caixa-email .input-email{
+  outline-color: #FFC632;
+} 
+.inputs.email-ativo .caixa-senha .input-senha{
+  outline-color: #FFC632;
+}
+.email-ativo svg path{
+  stroke: #FFC632;
+}
+
+
+.caixa-email input::placeholder{
+  color: #afb6c2;
+  font-size: 15px;
+}
+.caixa-senha label{
+  font-size: 18px;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.caixa-senha input{
+  background: transparent;
+  border: 1px solid #afb6c2;
+  border-radius: 5px;
+  width: 23rem;
+  height: 40px;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  color: #afb6c2;
+}
+.caixa-senha input::placeholder{
+  color: #afb6c2;
+  font-size: 15px;
+}
+.display-icones-senha{
+  display: flex;
+  position: absolute;
+  padding: 12px 0px 0px 10px;
+}
+.emoji-senha{
+  margin-left: 340px;
+}
+/* .email-senha:focus{
+  border-color: #FFC632;
+}
+svg path{
+  stroke: #FFC632;
+} */
+/* CHECKED */
+.checked{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.check + label{
+  display: block;
+}
+.check{
+  display: none;
+  margin: 0.2em;
+}
+.icon-check{
+  display: none;
+  position: absolute;
+}
+.check + label:before{
+  content: " ";
+  border: 0.1em solid #afb6c2;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 0.8em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+.icon-check.active{
+  display: block;
+  padding: 5px 0px 2px 2px;
+}
+.check.active + label:before{
+  background:#ffc632 ;
+  color: #473404;
+  border-color: #ffc632;
+}
+.lembre{
+  font-size: 18px;
+}
+.esqueci-senha a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffc632;
+}
+
+/* BUTTON ENTRAR */
+.button-parag{
+  text-align: center;
+}
+.button-parag button{
+  display: block;
+  border-radius: 5px;
+  width: 25.5rem;
+  height: 55px;
+  background: #FFC632;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.button-parag p{
+  font-size: 18px;
+  color: #FFC632;
+}
+.button-parag p a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #FFC632;
+  font-weight: 700;
+}
+
+
+
+/* SEGUNDA PARTE COM IMAGEM */
+.background-img img{
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+}
+@media (max-width: 1200px){
+  .all{
+    display: block;
+  }
+  .background-img img{
+    display: none;
+  }
+}
+
+@media (max-width: 650px){
+  .logo{
+    padding: 50px 0px 0px 50px;
+  }
+  .background-img img{
+   display: none;
+  }
+  .container-form{
+    padding: 0px 50px 150px 50px;
+    background: transparent;
+  }
+  .checked{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4.5rem;
+    align-items: center;
+  }
+}
