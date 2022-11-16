@@ -206,7 +206,7 @@ svg path{
 }
 @media (max-width: 1200px){
   .all{
-    display: block;
+    display: inline-block;
   }
   .background-img img{
     display: none;
@@ -220,13 +220,14 @@ svg path{
     display: none;
   }
   .container-form{
+    margin-top: 100px;
     padding: 0px 50px 150px 50px;
     background: transparent;
   }
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 450px){
   .logo{
     padding: 20px 0px 0px 20px;
   }
@@ -242,5 +243,17 @@ svg path{
     grid-template-columns: 1fr 1fr;
     grid-gap: 4.5rem;
     align-items: center;
+  }
+  .caixa-email .input-email{
+    width: 18rem;
+  }
+  .caixa-senha input{
+    width: 18rem;
+  }
+  .emoji-senha{
+    margin-left: 270px;
+  }
+  .button-parag button{
+    width: 20.5rem;
   }
 }
