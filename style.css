@@ -249,10 +249,10 @@ input[type="text"]:focus{
   .caixa-senha input{
     width: 18rem;
   }
-  .emoji-senha{
-    margin-left: 270px;
-  }
   .button-parag button{
     width: 20.5rem;
+  }
+  #toggle{
+    margin: 10px 0px 0px 300px;
   }
 }
