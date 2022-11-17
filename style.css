@@ -107,11 +107,7 @@ body{
   cursor: pointer;
 }
 /* .email-senha:focus{
-  border-color: #FFC632;
-}
-svg path{
-  stroke: #FFC632;
-} */
+
 /* CHECKED */
 .checked{
   display: flex;
