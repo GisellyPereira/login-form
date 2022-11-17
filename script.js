@@ -1,3 +1,4 @@
+// BOTAO CHECKED
 const element =document.querySelector('.check-input');
 const check = document.querySelector('.check');
 const icon = document.querySelector('.icon-check')
@@ -11,15 +12,22 @@ element.addEventListener('click', ()=>{
 })
 
 
-const inputs= document.querySelector('.inputs');
+// OLHINHO INPUT
 
+const password = document.getElementById('password');
+const toggle = document.getElementById('toggle');
 
-inputs.addEventListener('click', ()=>{
-  inputs.classList.toggle('email-ativo');
+function showHide(){
+  if(password.type === 'password'){
+    password.setAttribute('type','text');
+    toggle.classList.add('hide');
+  }else{
+    password.setAttribute('type','password');
+    toggle.classList.remove('hide');
+  }
+}
+toggle.addEventListener('click', showHide);
 
-})
-
-
-
+  
 
 

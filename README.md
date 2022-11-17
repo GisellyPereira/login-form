@@ -2,5 +2,5 @@
 
 Este é um formulário de login que fiz usando HTML, CSS e JavaScript. 
 
-<img src="post-form.png">
+<img src="imagens/post-form.png">
 

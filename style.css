@@ -71,15 +71,6 @@ body{
   padding-left: 40px;
   color: #afb6c2;
 }
-.inputs.email-ativo .caixa-email .input-email{
-  outline-color: #FFC632;
-} 
-.inputs.email-ativo .caixa-senha .input-senha{
-  outline-color: #FFC632;
-}
-.email-ativo svg path{
-  stroke: #FFC632;
-}
 
 
 .caixa-email input::placeholder{
@@ -111,8 +102,9 @@ body{
   position: absolute;
   padding: 12px 0px 0px 10px;
 }
-.emoji-senha{
+#toggle{
   margin-left: 340px;
+  cursor: pointer;
 }
 /* .email-senha:focus{
   border-color: #FFC632;
@@ -184,6 +176,7 @@ svg path{
   font-weight: 700;
   margin-top: 40px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .button-parag p{
   font-size: 18px;
