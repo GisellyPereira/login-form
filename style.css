@@ -53,6 +53,15 @@ body{
 }
 
 /* INPUTS E LABELS */
+input[type="email"]:focus{
+  border-color: #FFC632;
+}
+input[type="password"]:focus{
+  border-color: #FFC632;
+}
+input[type="text"]:focus{
+  border-color: #FFC632;
+}
 .caixa-email label{
   font-size: 18px;
   display: block;
@@ -70,9 +79,8 @@ body{
   height: 40px;
   padding-left: 40px;
   color: #afb6c2;
+  outline: none;
 }
-
-
 .caixa-email input::placeholder{
   color: #afb6c2;
   font-size: 15px;
@@ -84,6 +92,7 @@ body{
   margin-bottom: 8px;
 }
 .caixa-senha input{
+  position: absolute;
   background: transparent;
   border: 1px solid #afb6c2;
   border-radius: 5px;
@@ -92,27 +101,29 @@ body{
   padding-left: 40px;
   margin-bottom: 30px;
   color: #afb6c2;
+  outline: none;
 }
 .caixa-senha input::placeholder{
   color: #afb6c2;
   font-size: 15px;
 }
-.display-icones-senha{
-  display: flex;
+.cadeado{
   position: absolute;
-  padding: 12px 0px 0px 10px;
+  padding: 10px 0px 0px 10px;
 }
 #toggle{
-  margin-left: 340px;
+  position: relative;
+  margin: 10px 0px 0px 380px;
   cursor: pointer;
 }
-/* .email-senha:focus{
+
 
 /* CHECKED */
 .checked{
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 .check + label{
   display: block;
@@ -184,8 +195,6 @@ body{
   color: #FFC632;
   font-weight: 700;
 }
-
-
 
 /* SEGUNDA PARTE COM IMAGEM */
 .background-img img{
